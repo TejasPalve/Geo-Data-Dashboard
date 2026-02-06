@@ -38,9 +38,9 @@ geo-data-dashboard/
      
 │ │ ├─ DataTable.jsx
 
-│ │ ├─ MapView.jsx
+│ │ ├─ GeoMap.jsx
 
-│ │ └─ Filters.jsx
+│ │ └─ Location.jsx
 
 │ │
 
