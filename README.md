@@ -12,7 +12,7 @@ A React-based dashboard to visualize and interact with geospatial and tabular da
   - Handles 5k+ rows efficiently
 
 - Map Integration
-  - Uses **Leaflet** to display markers based on latitude/longitude
+  - Uses Leaflet to display markers based on latitude/longitude
   - Click table row → highlight marker
   - Click marker → highlight corresponding row
 
@@ -29,20 +29,35 @@ A React-based dashboard to visualize and interact with geospatial and tabular da
 🏗️ Project Structure
 geo-data-dashboard/
 │
+
 ├─ public/
+
 ├─ src/
+
 │ ├─ components/
+     
 │ │ ├─ DataTable.jsx
+
 │ │ ├─ MapView.jsx
+
 │ │ └─ Filters.jsx
+
 │ │
+
 │ ├─ data/
+
 │ │ └─ mockData.json
+
 │ │
+
 │ ├─ hooks/
+
 │ │ └─ useDataFetch.js
+
 │ │
+
 │ ├─ App.jsx
+
 │ └─ index.jsx
 │
 ├─ package.json
