@@ -62,8 +62,8 @@ geo-data-dashboard/
 
 └─ README.md
 
-Time Spent
 
+Time Spent
 -Architecture planning — 1 hour
 
 -Table implementation — 2 hours
