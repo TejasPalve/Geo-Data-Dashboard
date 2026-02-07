@@ -62,3 +62,19 @@ geo-data-dashboard/
 
 └─ README.md
 
+Time Spent
+
+-Architecture planning — 1 hour
+
+-Table implementation — 2 hours
+
+-Map integration — 2 hours
+
+-Synchronization logic — 1 hour
+
+-Performance tuning — 1 hour
+
+-Documentation — 30 minutes
+
+
+-Total — approximately 7.5 hours
