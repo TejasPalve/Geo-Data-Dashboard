@@ -55,7 +55,10 @@ geo-data-dashboard/
 │ ├─ App.css
 
 │ └─ index.jsx
+
 ├─ index.html
+
 ├─ package.json
+
 └─ README.md
 
