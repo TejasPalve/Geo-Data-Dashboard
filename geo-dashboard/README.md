@@ -40,26 +40,22 @@ geo-data-dashboard/
 
 │ │ ├─ GeoMap.jsx
 
-│ │ └─ Location.jsx
+│ │ └─ Layout.jsx
 
 │ │
 
-│ ├─ data/
-
-│ │ └─ mockData.json
-
-│ │
-
-│ ├─ hooks/
-
-│ │ └─ useDataFetch.js
-
-│ │
+│ ├─ data.js
 
 │ ├─ App.jsx
 
+│ ├─ App.css
+
+│ ├─  main.jsx
+
+│ ├─ App.css
+
 │ └─ index.jsx
-│
+├─ index.html
 ├─ package.json
 └─ README.md
 
