@@ -1,151 +1,61 @@
-Geo Data Dashboard — React
+Geo-Data-Dashboard
+A React-based dashboard to visualize and interact with geospatial and tabular data. Features a responsive data table, interactive map (Leaflet), client-side filtering and sorting, and seamless synchronization between table rows and map markers. Designed to handle large datasets (5k+ rows) efficiently using React hooks and local state.
 
-A React-based Geo Data Dashboard that consumes and visualizes spatial and tabular data. The application demonstrates efficient handling of large datasets, map visualization, and synchronized interaction between a data table and geographic markers.
+---
 
-Overview
+- Features
 
-This dashboard displays project data containing geographic coordinates in a paginated table and visualizes the same data on an interactive map. Users can interact with both the table and map, and selections stay synchronized between the two views.
+- Data Table
+  - Paginated table fetching data from a mock API (JSON)
+  - Columns: Project Name, Latitude, Longitude, Status, Last Updated
+  - Sorting and client-side filtering
+  - Handles 5k+ rows efficiently
 
-The goal of this project is to demonstrate:
--Clean React component architecture
--Efficient rendering of large datasets (5000+ rows)
--Map and UI synchronization
--Separation of UI and data logic
--Maintainable and readable code
+- Map Integration
+  - Uses Leaflet to display markers based on latitude/longitude
+  - Click table row → highlight marker
+  - Click marker → highlight corresponding row
 
-Features
-Data Table
-Displays paginated project data
+- State Management
+  - Local state with React hooks only
+  - Proper separation of UI and data logic
 
-Columns:
--Project Name
--Latitude
--Longitude
--Status
--Last Updated
--Client-side sorting
--Filtering support
--Handles large datasets without lag
+- UI/UX
+  - Built using **Material-UI (MUI)**
+  - Responsive design
 
-Map Integration
--Built using React Leaflet
--Markers plotted using latitude and longitude
--Clicking a table row highlights the map marker
--Clicking a map marker highlights the table row
+---
 
-State Management
--Local React state only (no Redux)
--Centralized synchronization handled in App component
--Minimal re-renders for performance
-
-Tech Stack
-
-React (Vite)
-
-Material UI for interface components
-React Leaflet for map rendering
-JavaScript (ES6+)
-CSS
-
-Folder Structure
-geo-dashboard
+🏗️ Project Structure
+geo-data-dashboard/
 │
-|
-├── public
-|
-│
-|
-├── src
-|   |
-│   ├── components
-|   |   |
-│   │   ├── DataTable.jsx      # Table rendering, sorting, filtering
-|   |   |
-│   │   ├── GeoMap.jsx         # Map + marker visualization
-|   |   |
-│   │   └── Layout.jsx         # UI layout wrapper
-|   |
-│   │
-|   |
-│   ├── data.js                # Mock dataset
-|   |
-│   ├── App.jsx                # State coordination & sync logic
-|   |
-│   ├── main.jsx               # Application entry point
-|   |
-│   ├── App.css
-|   |
-│   └── index.css
-|
-│
-|
-├── index.html
-|
-├── package.json
-|
-├── vite.config.js
-|
-└── README.md
 
-Architecture Decisions
+├─ public/
 
--The application is divided into focused components:
--DataTable handles tabular UI and interactions
--GeoMap manages geographic visualization
--Layout provides structure
--App coordinates shared state
+├─ src/
 
-This structure ensures separation of concerns, easier maintenance, and scalability.
+│ ├─ components/
+     
+│ │ ├─ DataTable.jsx
 
-Synchronization is achieved through shared state:
--Table selection → updates selected item → map marker highlights
--Marker click → updates selected item → table row highlights
+│ │ ├─ GeoMap.jsx
 
-Performance Strategy
-To support large datasets:
--Client-side pagination limits rendered rows
--Efficient filtering and sorting
--Controlled React re-renders
--Lightweight marker rendering
--These optimizations ensure smooth performance even with thousands of entries.
+│ │ └─ Layout.jsx
 
-Installation
--Clone the repository:
--git clone <your-repo-url>
--Navigate into the project:
--cd geo-dashboard
--Install dependencies:
--npm install
--Run development server:
--npm run dev
--Open in browser:
--http://localhost:5173
+│ │
 
+│ ├─ data.js
 
-Time Spent
--Architecture planning — 1 hour
--Table implementation — 2 hours
--Map integration — 2 hours
--Synchronization logic — 1 hour
--Performance tuning — 1 hour
--Documentation — 30 minutes
--Total — approximately 7.5 hours
+│ ├─ App.jsx
 
-Evaluation Focus
+│ ├─ App.css
 
-This project demonstrates:
--Component decomposition
--Handling of large datasets
--Map and UI synchronization
--Clean, readable code
--Practical dashboard architecture
+│ ├─  main.jsx
 
-Future Enhancements
--Virtualized table rendering
--Marker clustering
--Server-side pagination
--Advanced filtering
--Map animations
+│ ├─ App.css
 
-Author
-Tejas Palve
+│ └─ index.jsx
+├─ index.html
+├─ package.json
+└─ README.md
+
